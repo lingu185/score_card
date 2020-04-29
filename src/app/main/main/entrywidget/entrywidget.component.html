@@ -1,0 +1,84 @@
+<div class="scorecardcommondiv">
+  <div class="container">
+  
+    <div class="row">
+      
+      <div class="col-12 mattabwidth">
+          <mat-card>
+          
+        <mat-tab-group mat-align-tabs="center" backgroundColor="primary" [selectedIndex]="selectedIndex" >
+         
+          <mat-tab label="LIVE"  >
+              <div *ngIf="selectedIndex==1"><app-nodatafound></app-nodatafound></div>
+                   <owl-carousel class="live" [options]="carouselOptions" [items]="wkt7" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+                  <div class="item" *ngFor="let data of wkt7 | slice:0:9 ;let i= index" [routerLink]="['cricket/matchcentre',data.seriesname,data.Id,data.teamfullname,'scorecard']">
+                    <div class="slide-text live">
+                      <div class="row" >  
+                    <div class="col-5 awayalign"> <span class="liveflagSize"><span *ngIf="data.flag"><img src="assets/{{data.flag}}.png"> </span><h6>{{data.name}}</h6> </span></div>
+                    <div class="col-2 vsalign"> <h6>{{data.match}}<br>{{data.id}}</h6><span>{{data.date}}</span></div>
+                    <div class="col-5 homealign"><span class="lievflagalign"><span *ngIf="data.flag1"><img src="assets/{{data.flag1}}.png"></span> <h6>{{data.name1}}</h6> </span></div>
+                    
+                    <div class="col-12 stadium"> <h6> {{data.stadium}}</h6> </div>
+                
+                    </div>
+                    </div>
+                      </div>
+                </owl-carousel>
+          
+          </mat-tab>
+        
+    
+          <mat-tab label="RESULT"  >
+            
+            <owl-carousel class="result" [options]="carouselOptions" [items]="wkt8" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+              <div class="item" *ngFor="let data of wkt8 | slice:0:9;let i= index" [routerLink]="['cricket/matchcentre',data.seriesname,data.Id,data.teamfullname,'scorecard']">
+                <div class="slide-text">
+                  <div class="row">    
+                    <div class="col-12 timecenter"><h6>{{data.time| date:'medium'}}<br></h6></div>
+                
+                  </div>
+                  <div class="row scFlgAlign">   
+               
+                     <div class="col-5 awayalign"><div class="scflRight"> <span class="flagalign" ><h6>{{data.firstinningsname}}</h6><br><h6>{{data.firstinningsrun}}/{{data.firstinningswkt}}</h6><span *ngIf="data.flag"><img src="assets/{{data.flag}}.png"></span></span></div></div>
+                <div class="col-2 vsalign"> <h6>{{data.id}}</h6><br><h6> {{data.inningsovertwo}}</h6> </div>
+            
+                <div class="col-5 homealign"><div class="scflLeft"><span class="flagalign"><span *ngIf="data.flag1"><img src="assets/{{data.flag1}}.png"></span><h6>{{data.secinningsname}}</h6><br><h6>{{data.secinningsrun}}/{{data.secinningswkt}}</h6> </span></div>
+                  </div>
+                </div>
+              <div class="col-12 stadium"> <h6> {{data.stadium}}</h6> </div>
+            
+                </div>
+                  </div>
+            </owl-carousel>
+            
+          </mat-tab>
+          <mat-tab label="UPCOMING" class="upcoming"> 
+              <owl-carousel class="upcoming" [options]="carouselOptions" [items]="wkt6" [carouselClasses]="['owl-theme', 'row', 'sliding']" class="owlExtension">
+                  <div class="item" *ngFor="let data of wkt6 | slice:0:9;let i= index">
+                    <div class="slide-text">
+                       <div class="row">
+                              <div class="col-12 timecenter"><h6>{{data.time| date:'medium'}}<br></h6></div>
+                            </div>
+                      <div class="row scFlgAlign">   
+                         
+                         <div class="col-sm-5 col-4 awayalign"><div class="scflRight"><span class="flagalign"> <h6>{{data.name1}}</h6><span *ngIf="data.flagbatting"><img class="upcomFlag" src="assets/{{data.flagbatting}}.png"> </span></span></div></div>
+                    <div class="col-sm-2 col-4 vsalign"> <h6>{{data.match}}<br>{{data.id}}</h6> </div>
+                
+                    <div class="col-sm-5 col-4 homealign"><div class="scflLeft upcomScLeft"><span class="flagalign"><span *ngIf="data.flagbowling"><img class="upcomFlag" src="assets/{{data.flagbowling}}.png"></span></span><span><h6>{{data.name}}</h6> </span></div>
+                      </div></div>
+                  <div class="col-12 stadium"> <h6> {{data.stadium}}</h6> </div>
+                
+                    </div>
+                      </div>
+                </owl-carousel>
+            
+          </mat-tab>
+  
+        </mat-tab-group>
+        </mat-card>
+       
+      </div> 
+    </div>
+   
+  </div>
+  </div>

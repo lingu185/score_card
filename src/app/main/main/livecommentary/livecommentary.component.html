@@ -1,0 +1,30 @@
+
+<div>
+  <div class="col-sm-12 tool">
+      <mat-toolbar color="primary">
+<h6> COMMENTORY</h6>
+      </mat-toolbar>
+  
+    </div>
+    <div style="height: 300px; background: #EFF2F3">
+      <ng-scrollbar #scrollable>
+
+
+        <div *ngIf="this.commentarylength===0">
+            <app-nodatafound></app-nodatafound>
+            </div>
+<div class="tables" *ngIf="this.newtype !==0">
+  
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="message">
+      <th mat-header-cell *matHeaderCellDef></th>
+     
+      <td class="tablecell" mat-cell *matCellDef="let message"><span class="icon">{{message.icon}} </span><span>{{message.text}}</span></td>
+    </ng-container>
+  
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+  </table>
+ 
+</div>
+</ng-scrollbar>

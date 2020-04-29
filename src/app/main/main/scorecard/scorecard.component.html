@@ -1,0 +1,53 @@
+
+ 
+<div class="scorecardcommondiv" >
+    <div class="container">
+      <div class="row" >
+        <div class="col-md-6 scPad8">
+    <app-livescore [Id]="Id" ></app-livescore>
+    <app-livecommentary [Id]="Id" ></app-livecommentary>
+    </div>
+    <div class="col-md-6 scPad8 ">
+    <nav mat-tab-nav-bar backgroundColor="primary" >
+      <a  mat-tab-link *ngFor="let link of navLinks" [routerLink]="link.link" routerLinkActive #rla="routerLinkActive"
+      [active]="rla.isActive"
+      (click)="getUrl(link.label)"
+            [active]="rla.isActive">
+        {{link.label}}
+      </a>
+    </nav>
+    <mat-tab-group *ngIf="scoreCardData" [selectedIndex]=" this.selectedIndex" class="scorecardScoreTab">
+      <mat-tab *ngIf="innings>=1" label={{this.teamname1}}-{{this.labelscoreone}}{{this.slash}}{{this.labelwkt1}}><app-sinnings1  [childdata]="childdata" ></app-sinnings1></mat-tab>
+      <mat-tab *ngIf="innings>=2" label={{this.teamname2}}-{{this.labelscoretwo}}{{this.slash}}{{this.labelwkt2}}> <app-sinnings2 [childdata]="childdata"></app-sinnings2> </mat-tab>
+      <mat-tab *ngIf="innings>=3" label={{this.teamname3}}-{{this.labelscorethree}}{{this.slash}}{{this.labelwkt3}}><app-sinnings3 [childdata]="childdata"></app-sinnings3></mat-tab>
+      <mat-tab *ngIf="innings==4" label={{this.teamname4}}-{{this.labelscorefour}}{{this.slash}}{{this.labelwkt4}}><app-sinnings4  [childdata]="childdata"></app-sinnings4> </mat-tab> 
+    
+    </mat-tab-group >
+    <div  *ngIf="commentaryData" >
+      <div *ngIf="inningslength==0"><app-nodatafound></app-nodatafound></div>
+    <mat-tab-group *ngIf="commentaryData" [selectedIndex]="this.selectedIndex1" class="scorecardScoreTab">
+        <mat-tab  *ngIf="inningslength>=1"  label={{this.teamname5}}-{{this.labelscoreone}}{{this.slash}}{{this.labelwkt1}}><app-cinnings1 [cchilddata]="cchilddata"></app-cinnings1></mat-tab>
+        <mat-tab  *ngIf="inningslength>=2"  label={{this.teamname6}}-{{this.labelscoretwo}}{{this.slash}}{{this.labelwkt2}}><app-cinnings2 [cchilddata]="cchilddata"></app-cinnings2></mat-tab>
+        <mat-tab  *ngIf="inningslength>=3"  label={{this.teamname7}}-{{this.labelscorethree}}{{this.slash}}{{this.labelwkt3}}><app-cinnings3 [cchilddata]="cchilddata"></app-cinnings3></mat-tab>
+        <mat-tab  *ngIf="inningslength==4"  label={{this.teamname8}}-{{this.labelscorefour}}{{this.slash}}{{this.labelwkt4}}s><app-cinnings4 [cchilddata]="cchilddata"></app-cinnings4></mat-tab>
+      </mat-tab-group>
+    
+    </div>
+   <div  *ngIf="graphData">
+    <span >
+      <div #graph style="min-width: 310px; height: auto; margin: 0 auto;"></div>
+    </span>
+    
+   </div>
+    <router-outlet></router-outlet>
+    
+    </div>
+    </div>
+    </div>
+    
+  </div>
+  <div class="scorecardcommondiv" *ngIf=" this.noinnings===0;">
+    <mat-card>
+      {{ this.noinningsboard}}
+    </mat-card>
+    </div>

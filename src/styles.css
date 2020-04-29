@@ -1,0 +1,113 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+.owl-theme .owl-nav {
+    margin-top: 10px;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+}
+.mat-tab-labels{
+    height: 40px;
+}
+.mat-tab-label {
+    height: 48px;
+    padding: 0 0px;
+
+    cursor: pointer;
+    box-sizing: border-box;
+    opacity: .6;
+    min-width: 60px !important;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    position: relative;
+}
+td.mat-cell, td.mat-footer-cell, th.mat-header-cell {
+    /* padding: 10px !important; */
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-right: 1px solid #d9d9d9;
+}
+.owl-carousel {
+    position:relative !important;
+    margin: 0 !important;
+    }
+    .owl-theme .owl-nav [class*='owl-']:hover{
+        background: #fff !important;
+        color: #000 !important;
+    }
+    .owl-nav .owl-prev {
+    position:absolute;
+    left:0em;
+    font-size:30px;
+    height: 100%;
+    top: 0;
+    width:5em;
+    margin:0 !important;
+    }
+    .owl-nav .owl-next {
+      position:absolute;
+      right:0em;
+      font-size:30px;
+      height: 100%;
+      top: 0;
+      width:5em;
+    margin:0 !important;
+      }
+      .owl-theme .owl-nav{
+          margin-top:0 !important;
+          -webkit-tap-highlight-color:none !important;
+      }
+      
+.scorecardScoreTab .mat-tab-label{
+    height: 48px;
+    padding: 0px 7px !important;
+    cursor: pointer;
+    box-sizing: border-box;
+    opacity: 0.6;
+    min-width: 160px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    position: relative;
+    font-size: 12px !important;
+}
+.scorecardScoreTab .mat-tab-header-pagination-controls-enabled .mat-tab-header-pagination{
+    display: none;
+}
+
+ng-scrollbar-x.ng-scrollbar-visible[_ngcontent-c21], ng-scrollbar-y.ng-scrollbar-visible[_ngcontent-c21] {
+    display: block;
+    padding: 0px !important;
+  }
+  .scollFont{
+    font-size:12px;
+    margin-left: 2px;
+    margin-right: 2px;
+    border-left: 1px solid ;
+    height: 50px;
+    cursor: pointer;
+    padding-left: 5px;
+  }
+  .scollFont1{
+    font-size:12px;
+    cursor: pointer;
+    padding-right: 3px;
+  }
+
+  .ng-scrollbar-visible{
+    padding: 0px !important;
+  }
+  .tabAlignRight{
+    float: right !important;
+    margin-right: 7px !important;
+  }
+  .mat-tab-link{
+    min-width:105px !important;
+  }

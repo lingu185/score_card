@@ -1,0 +1,100 @@
+<mat-card>
+  <div class="fdivblack">
+    <ul>
+      <li>
+        <span class="shortname"><img class="firstInFlag" *ngIf="this.battingteamid"src="assets/{{this.battingteamid}}.png">{{this. firstinningsshortname}}</span>
+        <span class="score">
+          {{ this.totalscore.runs_scored}}/{{ this.totalscore.wickets}}</span>
+      </li>
+      <li class="rightscorediv">
+        <span>{{this.totalscore.overs}} OV</span>
+        <span class="RRhighlight" *ngIf="this.lengt===1">RR {{this.runrate | number:'1.1-2'}}</span><span class="RRhighlight" *ngIf="this.lengt>=2">RR {{this.liverunrate  | number:'1.1-2'}}</span>
+      </li>
+      <li class="adjusstatus"><span
+          *ngIf="this.gamestatus===1">{{ this.totalscore.toss_text}}</span><span *ngIf="this.gamestatus===10">{{ this.totalscore.result_text}}</span>
+      </li>
+    </ul>
+  </div>
+  <div class="secdiv" *ngIf="  this.inningslength!==1">
+      <img class="secInFlag" *ngIf="this.battingteamid"src="assets/{{this.bowlingteamid}}.png"> <h6>{{ this.firstinningshead.team_short_name}}
+      {{this.firstinningshead.runs_scored}}/{{   this.firstinningshead.wickets}} ({{  this.firstinningshead.overs}})
+    </h6>
+  </div>
+
+  <div class="tblcolor">
+    <table class="table" *ngIf="gamestatus === 1 && 14">
+      <thead>
+        <tr>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tbltdsize">
+            {{    this.livematch.liveplayernameone }}<br>{{  this.livematch.liveplayeronerun}}({{   this.livematch.liveplayeronebal }})
+          </td>
+        </tr>
+        <tr>
+          <td class="tbltdsize">
+            {{  this.livematch.liveplayernametwo }}<br>{{  this.livematch.liveplayertworun}}({{ this.livematch.liveplayertwobal}})
+          </td>
+        </tr>
+        <tr>
+          <td class="tbltdsize">
+            {{   this.bowlname }}<br>{{  this.bowlrun }}({{    this.bowlovr}})
+           
+          </td>
+        </tr>
+
+        <thead>
+
+        </thead>
+       
+    </table>
+  </div>
+  <div class="tblcolor">
+    <table class="table" *ngIf="this.gamestatus===10">
+      <thead>
+        <tr>
+
+          <th scope="col" class="tblhead">TOP BATSMEN</th>
+          <th scope="col" class="tblhead">TOP BOWLERS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+
+          <td class="tbltdsize">
+            {{  this.topbatsmanfirst}}<br>{{ this.livematch.totalrunfirstplayer}}({{  this.livematch.totalfirstballplayer }})
+          </td>
+          <td class="tbltdsize">
+            {{this.topbowlsecname}}<br>{{this.livematch.topbowlerwkttaken}}/{{this.livematch.topbowlerruncon}}
+          </td>
+        </tr>
+        <tr>
+
+          <td class="tbltdsize">
+            {{ this.topsecplayername}}<br>{{ this.livematch.totalrunsecplayer}}({{  this.livematch.totalsecballplayer }})
+          </td>
+          <td class="tbltdsize">
+            {{this.topbowlname}}<br>{{this.livematch.topbowlsecwkt}}/{{this.livematch.topbowlsecrun}}
+          </td>
+        </tr>
+
+
+        <thead>
+
+        </thead>
+
+    </table>
+  </div>
+
+  <div class="scMarquee">
+    <ng-marquee duration="20">
+      <mark> {{this.tosstext}}</mark>
+      <mark class="markdistance"> {{this.resulttext}}</mark>
+    </ng-marquee>
+  </div>
+</mat-card>
+<!-- <div id="container1" style="min-width: 200px; max-width: 400px; height: 400px;"></div>
+<pre id="tsv" style="display:none">
+</pre> -->

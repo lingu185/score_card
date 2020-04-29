@@ -1,0 +1,318 @@
+mat-tab-group{
+    width:100%;
+    margin:0 auto;
+}
+.card{
+  
+    color: white;
+}
+/* .fdivblack{
+    /* background-color: black; */
+  
+/* } */
+.score{
+    font-size: 50px;
+}
+span{
+    width:100%;
+    float:left;
+
+}
+span.ng-star-inserted{
+  width:auto;
+  float:none;
+}
+mat-card{
+    height: 100%;
+    padding: 0px !important;
+}
+ul{
+    position:relative;
+    padding-left:24px;
+}
+ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+.rightscorediv{
+    text-align: right;
+}
+.rightscorediv li{
+    display: block;
+}
+.secdiv{
+    background-color: #1f57a5;
+    color:white;
+   
+}
+.secdiv h6{
+    padding-left: 21px;
+    margin-bottom: 1px;
+}
+.tablecolor{
+    background-color: white;
+}
+.tblcolor{
+    background-color: white;
+}
+table{
+    width:100%
+}
+.mat-toolbar-row, .mat-toolbar-single-row {
+    height: 30px;
+}
+.tool{
+    height: 40px;
+    padding: 0;
+    margin-top: 7px;
+  }
+  mark{
+    color: white;
+    background-color: transparent;
+  }
+ 
+ 
+   
+  .mat-tab-group.mat-background-primary .mat-tab-label, .mat-tab-group.mat-background-primary .mat-tab-link, .mat-tab-nav-bar.mat-background-primary .mat-tab-label, .mat-tab-nav-bar.mat-background-primary .mat-tab-link {
+    color: #fff;
+    width:35% !important;
+}
+.mattabcls .fcls{
+    color:red;
+width:33.3%;
+
+}
+
+    .fcls{
+        width:33.3%;
+    }
+    .tcls{
+        width:33.3%
+    }
+  
+  .mattabwidth{
+      padding:0px !important;
+  }
+
+  .owl-carousel {
+    width: 90% !important;
+    margin: 10% auto;
+  }
+  
+  .owl-carousel .owl-nav {
+    overflow: hidden;
+    height: 0px;
+  }
+  
+  .owl-carousel .nav-btn {
+    height: 47px;
+    position: absolute;
+    width: 26px;
+    cursor: pointer;
+    top: 30% !important;
+  }
+  
+  .owl-carousel .owl-prev.disabled,
+  .owl-carousel .owl-next.disabled {
+    pointer-events: none;
+    opacity: 0.2;
+  }
+  .owl-prev {
+    position: absolute;
+    top: 20%;
+    left: 10px;
+}
+.owl-next {
+  position: absolute;
+  top: 20%;
+  left: auto;
+  right: 10px;
+}
+.owl-theme .owl-nav {
+  display: none !important;
+}
+  /* .owl-carousel .prev-slide {
+  //  background: url(./assets/images/nav-icon.png) no-repeat scroll 0 0;
+    left: -33px;
+  }
+  
+  .owl-carousel .next-slide {
+   // background: url(./assets/images/nav-icon.png) no-repeat scroll -24px 0px;
+    right: -33px;
+  } */
+  .owl-theme .owl-nav{
+    margin-top: -20px !important; 
+  }
+  .owl-carousel .prev-slide:hover {
+    background-position: 0px -53px;
+  }
+  
+  .owl-carousel .next-slide:hover {
+    background-position: -24px -53px;
+  }
+  .vsalign{
+   text-align: center;
+   padding-top:0 !important;
+  }
+  .awayalign{
+    text-align: right;
+   
+  }
+ 
+  .stadium{
+    text-align: center;
+  }
+  
+
+
+  .owl-carousel {
+    width: 90% !important;
+    margin: 10% auto;
+  }
+  
+  .owl-carousel .owl-nav {
+    overflow: hidden;
+   
+  }
+  
+  .owl-carousel .nav-btn {
+    height: 47px;
+    position: absolute;
+    width: 26px;
+    cursor: pointer;
+    top: 30% !important;
+  }
+  
+  .owl-carousel .owl-prev.disabled,
+  .owl-carousel .owl-next.disabled {
+    pointer-events: none;
+    opacity: 0.2;
+  }
+  .owl-prev {
+    position: absolute;
+    top: 20%;
+    left: 10px;
+  }
+  .owl-next {
+  position: absolute;
+  top: 20%;
+  left: auto;
+  right: 10px;
+  }
+  .owl-theme .owl-nav {
+  display: none !important;
+  }
+  /* .owl-carousel .prev-slide {
+  //  background: url(./assets/images/nav-icon.png) no-repeat scroll 0 0;
+    left: -33px;
+  }
+  
+  .owl-carousel .next-slide {
+   // background: url(./assets/images/nav-icon.png) no-repeat scroll -24px 0px;
+    right: -33px;
+  } */
+  .owl-theme .owl-nav{
+    margin-top: -20px !important; 
+    
+  }
+  .owl-carousel .prev-slide:hover {
+    background-position: 0px -53px;
+  }
+  
+  .owl-carousel .next-slide:hover {
+    background-position: -24px -53px;
+  }
+  .vsalign{
+   text-align: center;
+   padding-top: 7px;
+  }
+  .awayalign{
+    text-align: right;
+  
+  }
+ 
+  .stadium{
+    text-align: center;
+  }
+  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .0rem !important;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+    display: inline-block;
+  }
+  
+  .flagalign img{
+    display: inline-block;
+    /* float: left; */
+    margin: 0 auto;
+  }
+  .owl-carousel .owl-item img {
+    display: inline-block !important;
+
+}
+
+.scorecardcommondiv{
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+}
+.flagalign{
+  display: inline-block;
+  padding: 0 !important;
+  position: relative;
+}
+.flagalign img{
+  position: absolute;
+  top: 13px;
+  padding-left: 10px;
+}
+.scflLeft .flagalign img{
+  right: 4em;
+}
+
+.scflRight{
+  float: right;
+}
+.scflLeft{
+  float: left;
+}
+.upcomFlag{
+top:0px !important;
+    
+}
+@media only screen and (max-width: 1024px) {
+  .scflRight{
+   margin-right:2em;
+  }
+  .scflLeft{
+    margin-left :2em;
+  }
+  .upcomScLeft{
+
+    margin-left :3em;
+  }
+  
+}
+.timecenter h6{
+  width:100%;
+  text-align: center;
+}
+.flagSize img{
+ max-width:35px;
+}
+.flagSize{
+  right:0;
+}
+.liveflagSize img{
+  max-width: 40px;
+  float: right;
+}
+.lievflagalign img{
+  max-width: 40px;
+  float: left;
+}
+.slide-text.live{
+  margin-top: 6px;
+}

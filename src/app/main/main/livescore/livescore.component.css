@@ -1,0 +1,125 @@
+mat-tab-group{
+    width:100%;
+    margin:0 auto;
+}
+.card{
+  
+    color: white;
+}
+.fdivblack{
+    background-color: black;
+  
+}
+.score{
+    font-size: 50px;
+}
+span{
+    width:100%;
+    float:left;
+    color: white;
+}
+/* .RRhighlight::before { 
+    content: "";
+    display: inline-block;
+    border-top: .3rem solid #fff;
+    width: 4rem;
+    margin: 0 1rem;
+    transform: translateY(-1rem);
+  } */
+mat-card{
+    background-color: #1f57a5;
+    padding:0;
+}
+ul{
+    position:relative;
+    padding-left:15px;
+}
+ul li{
+    list-style-type: none;
+    display: inline-block;
+    width: 50%;
+}
+.rightscorediv{
+    text-align: right;
+    padding-right: 20px;
+}
+.rightscorediv li{
+    display: block;
+}
+.secdiv{
+    background-color: #1f57a5;
+    color:white;
+   
+  
+
+}
+.secdiv h6{
+    padding-left: 21px;
+    margin-bottom: 1px;
+    line-height: 1.5;
+}
+.tablecolor{
+    background-color: white;
+}
+.tblcolor{
+    background-color: white;
+}
+table{
+    width:100%
+}
+.mat-toolbar-row, .mat-toolbar-single-row {
+    height: 30px;
+}
+.tool{
+    height: 40px;
+    padding: 0;
+    margin-top: 7px;
+  }
+  mark{
+    color: white;
+    background-color: transparent;
+  }
+  .tblhead{
+    font-size: 14px;
+    border-right: 1px solid #d9d9d9;
+  }
+ .tbltdsize{
+    border-right: 1px solid #d9d9d9;
+font-size: 14px;
+  }
+  .markdistance{
+    padding-left: 30em;
+  }
+  .shortname{
+font-size: 15px;
+margin-top: 6px;
+margin-bottom: -12px;
+  }
+  .adjusstatus{
+      width:100% !important
+  }
+  .firstInFlag{
+      margin-right: 7px;
+    max-width: 27px !important;
+    width: 100% !important;
+  }
+  .secInFlag{
+    max-width: 27px !important;
+    width: 100% !important;
+    float:left !important; 
+    margin-top: 3px;
+    margin-left: 10px;
+    margin-right: 6px;
+  }
+  .rightscorediv .RRhighlight{
+    font-size: 13px !important;
+    padding-right: 10px !important;
+  }
+  .fdivblack ul,  .tblcolor .table{
+      margin:0 !important;
+  }
+  .scMarquee{
+      background: #000;
+      margin:0px 8px !important;
+  }
+

@@ -1,0 +1,21 @@
+<div style="height: 611px; background: #EFF2F3">
+  <ng-scrollbar #scrollable>
+  <div *ngIf="this.innings.length===0"><h5>Data Not found</h5></div> 
+   <!-- <mat-form-field>
+  <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+</mat-form-field>  -->
+
+  <div class="tables">
+     
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <ng-container matColumnDef="message">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td class="tablecell" mat-cell *matCellDef="let message"><span class="icon">{{message.icon}}</span> {{message.text}}</td>
+      </ng-container>
+    
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+   
+  </div>
+  </ng-scrollbar>
+  

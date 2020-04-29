@@ -1,0 +1,19 @@
+<owl-carousel [options]="carouselOptions" [items]="wkt2" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+  <div class="item" *ngFor="let data of wkt2;let i= index" [routerLink]="['matchcentre',data.Id,data.teamfullname,'scorecard']">
+    <div class="slide-text">
+      <div *ngIf="data1===0">
+        <h5>Datanotfound</h5>
+      </div>
+      <div class="row" *ngIf="data1!==0">  
+      <div class="col-5 awayalign"> <h6>{{data.name}}</h6></div>
+    <div class="col-2 vsalign"> <h6>{{data.match}}<br>{{data.id}}</h6><span>{{data.date}}</span></div>
+    <div class="col-5 homealign"><h6>{{data.name1}}</h6> </div>
+    
+    <div class="col-12 stadium"> <h6> {{data.stadium}}</h6> </div>
+    </div>
+    </div>
+      </div>
+</owl-carousel>
+
+
+

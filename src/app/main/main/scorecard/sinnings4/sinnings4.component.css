@@ -1,0 +1,78 @@
+table {
+  width: 100%;
+ 
+}
+ td.mat-cell, td.mat-footer-cell, th.mat-header-cell {
+  padding: 5px !important;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+} 
+.tool{
+  height: 40px;
+  padding: 0;
+}
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+  height: 40px;
+}
+.teamTopName{
+  font-size: 14px !important;
+  color:#000;
+}
+.fontname{
+font-size: 13px;
+}
+.fontout{
+font-size: 11px;
+}
+.fontscore{
+font-size: 12px;
+}
+.wktname{
+font-size: 18px;
+}
+td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:first-of-type{
+padding:10px;
+}
+
+.scroll-window {
+width: 100%;
+height: 642px;
+font-size: 13px;
+padding: 1px;
+font-size: 15px;
+line-height: 20px;
+color: #000;
+
+}
+.slimscroll-bar{
+background: #706d6d !important;
+width: 7px !important;
+border-radius: 16px !important;
+height: 73.1374px!important;
+}
+.headHeighlights{
+font-size: 12px !important;
+  color:#000;
+}
+.bowlingHeighlights{
+font-size: 12px !important;
+color:#000;
+}
+/* @media screen and (min-width: 1024px) {
+.tool mat-toolbar.mat-toolbar.mat-primary.mat-toolbar-single-row{
+  position: fixed;
+  bottom: 0em;
+  width: 100%;
+  float: left;
+  max-width: 538px;
+}
+}*/
+.mat-toolbar, .mat-toolbar h1, .mat-toolbar h2, .mat-toolbar h3, .mat-toolbar h4, .mat-toolbar h5, .mat-toolbar h6 {
+font: 500 16px/32px Roboto,"Helvetica Neue",sans-serif !important;
+margin: 0;
+}
+.tables{
+  border: 1px solid #d9d9d9;
+ 
+}
